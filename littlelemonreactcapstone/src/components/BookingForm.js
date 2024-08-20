@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const BookingForm = () => {
+const BookingForm = (props) => {
     const[date, setDate] = useState("");
     const[time, setTime] = useState("");
     const[guests, setGuests] = useState("");
@@ -42,7 +42,14 @@ const BookingForm = () => {
 
                     <div>
                         <label htmlFor='book-occasion'>Occasion:</label>
-                        <select id='book-occasion'key={occasion}></select>
+                        <select id='book-occasion'key={occasion} value={occasion} onChange={e => setOccasion(e.target.value)}>
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                        </select>
+                    </div>
+
+                    <div className='btnReceive'>
+                        <input aria-label='On Click' type='submit'value={"Make Your Reservation"}/>
                     </div>
                 </fieldset>
 

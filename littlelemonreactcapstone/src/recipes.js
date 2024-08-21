@@ -1,9 +1,12 @@
+import lemonDessert from './images/lemon dessert.jpg';
+import greekSalad from './images/greek salad.jpg';
+
 const recipes = [
     {
       id: 1,
       title: "Greek salad",
       price: 12.99,
-      image: "https://i.ibb.co/68c9bLv/greek-salad.jpg",
+      image: greekSalad,
       description:
         "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons",
     },
@@ -19,7 +22,7 @@ const recipes = [
       id: 3,
       title: "Lemon Dessert",
       price: 4.78,
-      image: "https://i.ibb.co/sm6MfCH/desert.jpg",
+      image: lemonDessert,
       description:
         "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
     },
